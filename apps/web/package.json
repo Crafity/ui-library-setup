@@ -1,0 +1,29 @@
+{
+  "name": "@crafity/web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@crafity/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "@crafity/eslint-config": "workspace:*",
+    "@crafity/prettier-config": "workspace:*",
+    "vite": "^5.2.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.2.2",
+    "eslint": "^8.57.0"
+  }
+}
