@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
+  "devDependencies": {
     "prettier": "^3.2.5"
   }
 }

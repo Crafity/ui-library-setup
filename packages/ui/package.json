@@ -2,9 +2,12 @@
   "name": "@crafity/ui",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/ui.umd.js",
+  "module": "dist/ui.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "vite build",
+    "dev": "vite build --watch",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "keywords": [],
@@ -17,11 +20,13 @@
   "devDependencies": {
     "@crafity/eslint-config": "workspace:*",
     "@crafity/prettier-config": "workspace:*",
-    "@types/react-dom": "^18.2.22",
     "@types/react": "^18.2.66",
-    "typescript": "^5.2.2"
-  },
-  "peerDependencies": {
-    "prettier": "^3.2.5"
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.74.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.8",
+    "vite-plugin-dts": "^3.8.1"
   }
 }
