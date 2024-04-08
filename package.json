@@ -5,12 +5,42 @@
   "main": "index.js",
   "scripts": {
     "dev": "nx run-many --target=dev -p @crafity/ui @crafity/web --parallel 5",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "pnpm --filter @crafity/* lint",
+    "lint:fix": "pnpm --filter @crafity/* lint:fix",
+    "test:types": "pnpm --filter @crafity/* test:types",
+    "preview": "pnpm --filter @crafity/web build && pnpm --filter @crafity/web preview",
+    "prettier": "pnpm --filter @crafity/* prettier",
+    "storybook:dev": "pnpm --filter @crafity/ui storybook:dev",
+    "prettier:fix": "pnpm --filter @crafity/* prettier:fix",
+    "clean": "rm -rf node_modules **/node_modules **/dist .nx/cache"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nx": "^18.2.3"
+    "@nx/js": "18.2.3",
+    "@nx/storybook": "18.2.3",
+    "@nx/web": "18.2.3",
+    "@storybook/addon-essentials": "7.6.17",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/core-server": "7.6.17",
+    "@storybook/jest": "^0.2.3",
+    "@storybook/react": "7.6.17",
+    "@storybook/react-vite": "7.6.17",
+    "@storybook/test-runner": "^0.13.0",
+    "@storybook/testing-library": "^0.2.2",
+    "@swc-node/register": "~1.8.0",
+    "@swc/core": "~1.3.85",
+    "@swc/helpers": "~0.5.2",
+    "nx": "^18.2.3",
+    "prettier": "^2.6.2",
+    "storybook": "7.6.17",
+    "ts-node": "10.9.1",
+    "typescript": "~5.4.2",
+    "vite": "~5.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

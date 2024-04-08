@@ -1,0 +1,5 @@
+{
+  "extends": ["@crafity/eslint-config"],
+  "ignorePatterns": ["dist", ".eslintrc.cjs", "storybook-static"],
+  "rules": {}
+}

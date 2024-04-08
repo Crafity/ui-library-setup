@@ -7,19 +7,28 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "vite build",
+    "storybook:dev": "storybook dev -p 62913",
     "dev": "vite build --watch",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "test:types": "tsc --noEmit --pretty false",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "prettier": "prettier -c .",
+    "prettier:fix": "prettier --write .",
+    "lint:fix": "eslint . --fix --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.5.1",
+    "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@crafity/eslint-config": "workspace:*",
     "@crafity/prettier-config": "workspace:*",
+    "@storybook/react-vite": "7.6.17",
+    "@types/node": "^20.12.5",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",

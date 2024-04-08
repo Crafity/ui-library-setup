@@ -1,24 +1,23 @@
-import path from 'path'
+import path from 'path';
 import { defineConfig } from 'vite';
-import dts from "vite-plugin-dts";
-import react from '@vitejs/plugin-react'
-
+import dts from 'vite-plugin-dts';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-build: {
+  build: {
     lib: {
-      entry: path.resolve("src", 'index.ts'),
+      entry: path.resolve('src', 'index.ts'),
       name: 'ui',
-      fileName: (format) => `ui.${format}.js`
+      fileName: format => `ui.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
       output: {
         globals: {
-          react: 'React'
-        }
-      }
-    }
+          react: 'React',
+        },
+      },
+    },
   },
   css: {
     preprocessorOptions: {
@@ -28,8 +27,16 @@ build: {
       sass: {},
     },
   },
-  plugins: [react(),
-  dts({
+  plugins: [
+    react(),
+    dts({
       insertTypesEntry: true,
-    })]
+    }),
+  ],
+  resolve: {
+    alias: {
+      lib: path.resolve(__dirname, 'src/lib'),
+      components: path.resolve(__dirname, 'src/components'),
+    },
+  },
 });

@@ -2,10 +2,15 @@
   "name": "@crafity/prettier-config",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "index": "prettier.config.js",
+  "main": "prettier.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier .",
+    "format:fix": "prettier --write ."
   },
+  "files": [
+    "prettier.config.js"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

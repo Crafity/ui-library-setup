@@ -8,5 +8,7 @@ module.exports = {
   ],
   ignorePatterns: ["dist"],
   parser: "@typescript-eslint/parser",
-  rules: {},
+  rules: {
+    "no-console": "error",
+  },
 };
