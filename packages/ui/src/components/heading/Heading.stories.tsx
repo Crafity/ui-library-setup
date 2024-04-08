@@ -1,12 +1,12 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react'
 
-import { Heading, tags, sizes } from './Heading';
+import { Heading, tags, sizes } from './Heading'
 
 export default {
   component: Heading,
-} satisfies Meta<typeof Heading>;
+} satisfies Meta<typeof Heading>
 
-type Story = StoryObj<typeof Heading>;
+type Story = StoryObj<typeof Heading>
 
 export const Overview: Story = {
   render: () => (
@@ -18,7 +18,7 @@ export const Overview: Story = {
       ))}
     </>
   ),
-};
+}
 
 export const Details: Story = {
   args: {
@@ -34,4 +34,4 @@ export const Details: Story = {
       control: { type: 'radio' },
     },
   },
-};
+}

@@ -1,9 +1,9 @@
-import styles from './button.module.scss';
+import styles from './button.module.scss'
 
 interface ButtonProps {
-  variant?: 'primary' | 'secondary';
-  onClick: () => void;
-  children: React.ReactNode;
+  variant?: 'primary' | 'secondary'
+  onClick: () => void
+  children: React.ReactNode
 }
 
 export function Button({
@@ -17,7 +17,7 @@ export function Button({
       onClick={() => onClick()}>
       {children}
     </button>
-  );
+  )
 }
 
-export default Button;
+export default Button

@@ -1,7 +1,4 @@
 .button {
-  // --background-color: #007bff;
-  // --border-color: red;
-
   &.primary {
     --background-color: #007bff;
     --border-color: #0056b3;
@@ -31,10 +28,4 @@
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
-
-  // @media (prefers-color-scheme: light) {
-  //   & {
-  //     background-color: #f9f9f9;
-  //   }
-  // }
 }

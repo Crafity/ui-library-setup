@@ -1,10 +1,10 @@
-import styles from './container.module.scss';
+import styles from './container.module.scss'
 
 interface ContainerProps {
-  flex?: 'row' | 'column';
-  inline?: boolean;
-  gap?: number;
-  children: React.ReactNode;
+  flex?: 'row' | 'column'
+  inline?: boolean
+  gap?: number
+  children: React.ReactNode
 }
 
 export function Container({ children, flex, gap, inline }: ContainerProps) {
@@ -25,5 +25,5 @@ export function Container({ children, flex, gap, inline }: ContainerProps) {
       className={styles.container}>
       {children}
     </div>
-  );
+  )
 }

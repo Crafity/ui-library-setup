@@ -1,4 +1,4 @@
-import { Button, Container, Heading } from '@crafity/ui';
+import { Button, Card, Container, Heading, ThemeSwitcher } from '@crafity/ui';
 import { useState } from 'react';
 
 function App() {
@@ -6,11 +6,16 @@ function App() {
 
   return (
     <Container flex="column" gap={10}>
+      <div style={{ position: 'absolute', top: '10px', left: '10px' }}>
+        <ThemeSwitcher />
+      </div>
       <Heading size="xxl">Heading H1</Heading>
       <Heading size="xl">Heading H2</Heading>
       <Heading size="m">Heading H3</Heading>
-      <p>Paragraph 1</p>
-      <p>Paragraph 2</p>
+      <Card>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+      </Card>
       <input type="text" />
       <input type="number" />
       <input type="checkbox" />

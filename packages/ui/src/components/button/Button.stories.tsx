@@ -1,14 +1,14 @@
 /* eslint-disable no-console */
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from './Button';
-import { Container } from 'components/container/Container';
+import { Button } from './Button'
+import { Container } from 'components/container/Container'
 
 export default {
   component: Button,
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Button>
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof Button>
 
 export const Overview: Story = {
   render: () => (
@@ -21,7 +21,7 @@ export const Overview: Story = {
       </Button>
     </Container>
   ),
-};
+}
 
 export const Primary: Story = {
   render: ({ variant, children }) => (
@@ -41,4 +41,4 @@ export const Primary: Story = {
       control: { type: 'radio' },
     },
   },
-};
+}

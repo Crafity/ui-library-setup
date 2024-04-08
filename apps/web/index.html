@@ -7,6 +7,15 @@
     <title>Vite + React + TS</title>
   </head>
   <body>
+    <script>
+      document.documentElement.classList.add(
+        localStorage.getItem('theme') ||
+          (window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light'),
+      );
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
