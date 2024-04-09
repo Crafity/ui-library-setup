@@ -1,0 +1,226 @@
+import { Container } from 'components/container/Container'
+import { Button } from './Button'
+import { LeftArrow } from 'icons/LeftArrow'
+import { RightArrow } from 'icons/RightArrow'
+
+# Buttons
+
+## Large Buttons
+
+<br/>
+
+### Primary Buttons
+
+<table className="sb-unstyled" cellSpacing="0" cellPadding="0">
+  <thead>
+    <tr>
+      <th></th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">Primary</div>
+        <div className="title-3">No border</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">Primary</div>
+        <div className="title-3">With border</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">Primary</div>
+        <div className="title-3">No border</div>
+        <div className="title-3">Centered</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">Primary</div>
+        <div className="title-3">With border</div>
+        <div className="title-3">Centered</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">Primary</div>
+        <div className="title-3">Previous</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">Primary</div>
+        <div className="title-3">Next</div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Default</th>
+      <td>
+        <Button variant="primary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button border variant="primary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button centered variant="primary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button centered border variant="primary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button variant="primary" icon={<LeftArrow />} />
+      </td>
+      <td>
+        <Button variant="primary" icon={<RightArrow />} />
+      </td>
+    </tr>
+    <tr>
+      <th>Active</th>
+      <td>
+        <Button active variant="primary">Shop now</Button>
+      </td>
+      <td>
+        <Button active border variant="primary">Shop now</Button>
+      </td>
+      <td>
+        <Button active centered variant="primary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button active centered border variant="primary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button active variant="primary" icon={<LeftArrow />} />
+      </td>
+      <td>
+        <Button active variant="primary" icon={<RightArrow />} />
+      </td>
+    </tr>
+    <tr>
+      <th>Disabled</th>
+      <td>
+        <Button disabled variant="primary">Shop now</Button>
+      </td>
+      <td>
+        <Button disabled border variant="primary">Shop now</Button>
+      </td>
+      <td>
+        <Button disabled centered variant="primary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button disabled centered border variant="primary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button variant="primary" disabled icon={<LeftArrow />} />
+      </td>
+      <td>
+        <Button variant="primary" disabled icon={<RightArrow />} />
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
+
+### Secondary Buttons
+
+<table className="sb-unstyled" cellSpacing="0" cellPadding="0">
+  <thead>
+    <tr>
+      <th></th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">secondary</div>
+        <div className="title-3">No border</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">secondary</div>
+        <div className="title-3">With border</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">secondary</div>
+        <div className="title-3">No border</div>
+        <div className="title-3">Centered</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">secondary</div>
+        <div className="title-3">With border</div>
+        <div className="title-3">Centered</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">secondary</div>
+        <div className="title-3">Previous</div>
+      </th>
+      <th>
+        <div className="title-1">Pill button</div>
+        <div className="title-2">secondary</div>
+        <div className="title-3">Next</div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Default</th>
+      <td>
+        <Button variant="secondary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button border variant="secondary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button centered variant="secondary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button centered border variant="secondary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button variant="secondary" icon={<LeftArrow />} />
+      </td>
+      <td>
+        <Button variant="secondary" icon={<RightArrow />} />
+      </td>
+    </tr>
+    <tr>
+      <th>Active</th>
+      <td>
+        <Button active variant="secondary">Shop now</Button>
+      </td>
+      <td>
+        <Button active border variant="secondary">Shop now</Button>
+      </td>
+      <td>
+        <Button active centered variant="secondary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button active centered border variant="secondary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button active variant="secondary" icon={<LeftArrow />} />
+      </td>
+      <td>
+        <Button active variant="secondary" icon={<RightArrow />} />
+      </td>
+    </tr>
+    <tr>
+      <th>Disabled</th>
+      <td>
+        <Button disabled variant="secondary">Shop now</Button>
+      </td>
+      <td>
+        <Button disabled border variant="secondary">Shop now</Button>
+      </td>
+      <td>
+        <Button disabled centered variant="secondary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button disabled centered border variant="secondary" iconRight={<RightArrow />}>Shop now</Button>
+      </td>
+      <td>
+        <Button variant="secondary" disabled icon={<LeftArrow />} />
+      </td>
+      <td>
+        <Button variant="secondary" disabled icon={<RightArrow />} />
+      </td>
+    </tr>
+  </tbody>
+</table>

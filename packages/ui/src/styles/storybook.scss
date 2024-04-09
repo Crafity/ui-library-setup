@@ -1,0 +1,36 @@
+table {
+  width: 100%;
+
+  td {
+    text-align: center;
+    padding: var(--spacing-8);
+  }
+  thead {
+    th {
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+      vertical-align: bottom;
+      padding-bottom: var(--spacing-8);
+
+      .title-1 {
+        color: var(--color-black);
+      }
+      .title-2 {
+        color: var(--color-red);
+      }
+      .title-3 {
+        color: var(--color-dark-grey);
+      }
+    }
+  }
+
+  tbody {
+    th {
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: right;
+      color: var(--color-dark-grey);
+    }
+  }
+}

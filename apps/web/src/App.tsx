@@ -1,4 +1,11 @@
-import { Button, Card, Container, Heading, ThemeSwitcher } from '@crafity/ui'
+import {
+  Button,
+  Card,
+  Container,
+  Heading,
+  ThemeSwitcher,
+  RightArrow,
+} from '@crafity/ui'
 import { useState } from 'react'
 
 function App() {
@@ -25,13 +32,36 @@ function App() {
         <option>Option 2</option>
       </select>
       <Container gap={10}>
-        <Button onClick={() => setCount(count => count + 1)}>
-          count is {count}
+        <Button
+          iconRight={<RightArrow />}
+          onClick={() => setCount(count => count + 1)}>
+          Primary
         </Button>
+        <Button border onClick={() => setCount(count => count + 1)}>
+          Border
+        </Button>
+        <Button disabled>Disabled</Button>
+        <Button border disabled>
+          Disabled
+        </Button>
+      </Container>
+      <Container gap={10}>
         <Button
           variant="secondary"
           onClick={() => setCount(count => count + 1)}>
-          count is {count}
+          Secondary
+        </Button>
+        <Button
+          variant="secondary"
+          border
+          onClick={() => setCount(count => count + 1)}>
+          Border
+        </Button>
+        <Button variant="secondary" disabled>
+          Disabled
+        </Button>
+        <Button border variant="secondary" disabled>
+          Disabled
         </Button>
       </Container>
     </Container>

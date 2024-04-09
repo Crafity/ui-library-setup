@@ -1,31 +1,92 @@
+:root {
+  --button-font-size: var(--font-size-16, 1rem);
+
+  --button-bg-disabled-opacity: 0.2;
+  --button-fg-disabled-opacity: 0.2;
+
+  --button-min-height: var(--spacing-44);
+  --button-padding-x: var(--spacing-24);
+  --button-border-radius: var(--border-radius-22);
+
+  --button-bg-color-primary: var(--color-red);
+  --button-bg-color-primary-active: var(--color-dark-red);
+  --button-fg-color-primary: var(--color-white);
+  --button-border-color-primary: var(--color-white);
+
+  --button-bg-color-secondary: var(--color-white);
+  --button-bg-color-secondary-active: var(--color-light-grey);
+  --button-fg-color-secondary: var(--color-black);
+  --button-border-color-secondary: var(--color-medium-grey);
+}
+
 .button {
   &.primary {
-    --background-color: #007bff;
-    --border-color: #0056b3;
+    --button-bg-color: var(--button-bg-color-primary);
+    --button-bg-color-active: var(--button-bg-color-primary-active);
+    --button-fg-color: var(--button-fg-color-primary);
+    --button-border-color: var(--button-border-color-primary);
   }
 
   &.secondary {
-    --background-color: #b8daff;
-    --border-color: #7a95b3;
+    --button-bg-color: var(--button-bg-color-secondary);
+    --button-fg-color: var(--button-fg-color-secondary);
+    --button-bg-color-active: var(--button-bg-color-secondary-active);
+    --button-border-color: var(--button-border-color-secondary);
   }
 
-  background-color: var(--background-color);
-  color: white;
-  border-radius: var(--border-radius);
-  border: var(--border-width-1) solid transparent;
-  padding: var(--spacing-2-5) var(--spacing-5);
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
+  background-color: var(--button-bg-color);
+  color: var(--button-fg-color);
+  border-color: var(--button-border-color);
+
+  min-height: var(--button-min-height);
+  padding: 0 var(--button-padding-x);
+
+  border-radius: var(--button-border-radius);
+  border-style: solid;
+  border-width: 0;
   transition: border-color 0.25s;
 
-  &:hover {
-    border-color: var(--border-color);
+  &.circular {
+    border-radius: 50%;
+    height: var(--button-min-height);
+    width: var(--button-min-height);
+    padding: 0;
   }
 
+  .children {
+    padding-inline-start: var(--spacing-4);
+    padding-inline-end: var(--spacing-4);
+  }
+
+  &.border {
+    border-width: var(--border-width-1);
+  }
+
+  font-size: var(--button-font-size);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  &.centered {
+    width: 100%;
+  }
+
+  &.focus,
+  &.active,
   &:focus,
+  &:active,
   &:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    outline: none;
+    background-color: var(--button-bg-color-active);
+  }
+  &:disabled {
+    opacity: var(--button-bg-disabled-opacity);
+    cursor: default;
+    .children {
+      opacity: var(--button-fg-disabled-opacity);
+    }
   }
 }

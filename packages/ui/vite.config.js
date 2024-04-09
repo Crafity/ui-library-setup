@@ -2,6 +2,7 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import react from '@vitejs/plugin-react'
+import svgr from 'vite-plugin-svgr'
 
 export default defineConfig({
   root: './',
@@ -31,6 +32,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    svgr(),
     react(),
     dts({
       insertTypesEntry: true,
@@ -40,6 +42,7 @@ export default defineConfig({
     alias: {
       lib: path.resolve(__dirname, 'src/lib'),
       components: path.resolve(__dirname, 'src/components'),
+      icons: path.resolve(__dirname, 'src/icons'),
     },
   },
 })
