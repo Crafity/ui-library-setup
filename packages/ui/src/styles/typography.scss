@@ -1,0 +1,186 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-black-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-black-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-blackitalic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-blackitalic-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-bold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-bolditalic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-extralight-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-extralight-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-extralightitalic-webfont.woff2')
+      format('woff2'),
+    url('/assets/fonts/pancettapro-extralightitalic-webfont.woff')
+      format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-italic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-light-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-lightitalic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-lightitalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-medium-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-mediumitalic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-mediumitalic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-semibold-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-semibolditalic-webfont.woff2')
+      format('woff2'),
+    url('/assets/fonts/pancettapro-semibolditalic-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-thin-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-thin-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pancetta';
+  src:
+    url('/assets/fonts/pancettapro-thinitalic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/pancettapro-thinitalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+:root {
+  --font-primary: 'Pancetta';
+  // --font-secondary: sans-serif;
+  --font-secondary: serif;
+
+  /* set base values */
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+
+  --color-text: var(--color);
+}
+
+body {
+  font-size: var(--text-base-size);
+  // font-family: var(--font-primary), var(--font-secondary);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

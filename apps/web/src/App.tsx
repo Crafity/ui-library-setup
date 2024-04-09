@@ -1,12 +1,12 @@
-import { Button, Card, Container, Heading, ThemeSwitcher } from '@crafity/ui';
-import { useState } from 'react';
+import { Button, Card, Container, Heading, ThemeSwitcher } from '@crafity/ui'
+import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <Container flex="column" gap={10}>
-      <div style={{ position: 'absolute', top: '10px', left: '10px' }}>
+      <div style={{ position: 'absolute', top: '10px', right: '10px' }}>
         <ThemeSwitcher />
       </div>
       <Heading size="xxl">Heading H1</Heading>
@@ -35,7 +35,7 @@ function App() {
         </Button>
       </Container>
     </Container>
-  );
+  )
 }
 
-export default App;
+export default App

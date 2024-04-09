@@ -18,12 +18,20 @@ export const sizeToTag = {
 interface HeadingProps {
   size: Size
   tag?: Tag
+  uppercase?: boolean
   children: React.ReactNode
 }
+// text-transform: uppercase;
 
-export function Heading({ size = 'xxl', tag, children }: HeadingProps) {
+export function Heading({
+  size = 'xxl',
+  tag,
+  uppercase,
+  children,
+}: HeadingProps) {
   return createElement(tag || sizeToTag[size], {
     className: classnames(styles.heading, styles[size]),
+    style: { textTransform: uppercase && 'uppercase' },
     children,
   })
 }
